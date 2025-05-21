@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${dictionary.name}">Training results</title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+          crossorigin="anonymous"/>
+
+    <style>
+        .col-number {
+            width: 3ch; /* ширина примерно 3 символа */
+            text-align: right; /* выравнивание номера по правому краю */
+            padding-right: 10px; /* небольшой отступ справа для аккуратности */
+        }
+    </style>
+
+
+</head>
+<body>
+
+<br/><br/>
+<div class="container">
+    <form id="training-form" th:action="@{/trainings(id=${training.id})}" th:method="post" action="training.html">
+
+        <h1 th:text="${dictionary.name}">Dictionary:</h1>
+        <br/><br/>
+        <h3 th:text="${training.isRepeat} ? #{title.trainingRepeat} : #{title.trainingNew}">
+            тренировка слов:
+        </h3>
+        <table class="table table-bordered table-striped">
+            <tbody>
+            <tr th:each="word, iterStat : ${training.words}">
+                <td class ="col-number" th:text="${iterStat.count}">1</td>
+                <td th:text="${word.name}">word</td>
+
+            </tr>
+            </tbody>
+        </table>
+    </form>
+        <div class="btn-group" role="group">
+            <a th:href="@{|/trainings/${training.id}/word|}"
+               class="btn btn-danger mr-3"
+               th:text="#{command.train}">Train</a>
+            <a th:href="@{/words/all(dictId=${dictionary.id})}" class="btn btn-info"
+               th:text="#{title.dictionary}">To dictionary</a>
+        </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+server:
+  port: 9090
+app:
+  # адрес почты, через которую сервер отправляет письма
+  server-email: ${server.email}
+
+spring:
+  application:
+    name: email-notification
+
+  sql:
+    init:
+      mode: always
+
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+  rabbitmq:
+    addresses: "localhost"
+    port: 5672
+    username: user
+    password: password
+
+  mail:
+    host: smtp.mail.ru
+    port: 465
+    # логин и пароль для почты, через которую сервер отправляет письма
+    username: ${email.server.user}
+    password: ${email.server.password}
+    protocol: smtps
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls.enable: true

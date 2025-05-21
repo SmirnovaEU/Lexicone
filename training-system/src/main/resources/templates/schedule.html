@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.ord">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${dictionary.name}">Dictionary</title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+          crossorigin="anonymous"/>
+
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+    <div class="btn-group" role="group">
+        <a th:href="@{/words/schedule(dictId=${dictionary.id}, lang=en_EN)}" class="btn btn-info" type="radio"
+           href="schedule.html">en</a>
+        <a th:href="@{/words/schedule(dictId=${dictionary.id}, lang=ru_RU)}" class="btn btn-danger" type="radio"
+           href="schedule.html">ru</a>
+    </div>
+
+    <a th:href="@{/words/all(dictId=${dictionary.id})}" class="btn btn-info" href="dict.html"
+       th:text="#{title.dictionary}">To dictionary</a>
+
+</nav>
+
+<br/><br/>
+<div class="container">
+    <h1 th:text="${dictionary.name}">Dictionary:</h1>
+    <br/><br/>
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th th:text="#{field.word('')}">WORD</th>
+            <th th:text="#{field.nextTrainDate('')}">NEXT TRAIN DATE</th>
+            <th th:text="#{field.lastTrainDate('')}">LAST TRAIN DATE</th>
+            <th th:text="#{field.totalTrainNumber('')}">TOTAL TRAIN NUMBER</th>
+            <th th:text="#{field.status('')}">STATUS</th>
+            <th th:text="#{field.percent('')}">PERCENT</th>
+            <th th:text="#{field.learntDate('')}">LEARNT DATE</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="schedule : ${schedules}">
+            <td th:text="${schedule.id}">1</td>
+            <td th:text="${schedule.word.name}">0</td>
+            <td th:text="${schedule.nextTrainDate}">0</td>
+            <td th:text="${schedule.lastTrainDate}">0</td>
+            <td th:text="${schedule.totalTrainNumber}">0</td>
+            <td th:text="${schedule.status}">NEW</td>
+            <td th:text="${schedule.stage.learntPercent}">0</td>
+            <td th:text="${schedule.learntDate}">0</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.ord">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="Dictionaries">Dictionaries</title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+          crossorigin="anonymous"/>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+    <div class="btn-group" role="group">
+        <a th:href="@{/dicts/all(lang=en_EN)}" class="btn btn-info" type="radio"
+           href="dict-list.html">en</a>
+        <a th:href="@{/dicts/all(lang=ru_RU)}" class="btn btn-danger" type="radio" href="dict-list.html">ru</a>
+    </div>
+    <a th:href="@{/}" class="btn btn-info mr-3" href="index.html" th:text="#{title.Home}">Home</a>
+</nav>
+<br/><br/>
+<div class="container">
+    <h1 th:text="#{title.dictionaries}">Dictionaries:</h1>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th th:text="#{field.name('')}">WORD</th>
+            <th th:text="#{field.createDate('')}">CREATION DATE</th>
+            <th th:text="#{field.description('')}">DESCRIPTION</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="dict : ${dicts}">
+            <td th:text="${dict.id}">1</td>
+            <td>
+                <a th:text="${dict.name}" th:href="@{/words/all(dictId=${dict.id})}" href="dict.html">animals</a>
+            </td>
+            <td th:text="${dict.creationDate}">01.01.2022</td>
+            <td th:text="${dict.description}">Words about animals</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

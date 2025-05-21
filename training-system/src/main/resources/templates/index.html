@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="Welcome">Welcome</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+          crossorigin="anonymous"/>
+
+</head>
+<body>
+<div class="container">
+    <br>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="btn-group" role="group">
+            <a th:href="@{/(lang=en_EN)}" class="btn btn-info" type="radio"
+               href="index.html">en</a>
+            <a th:href="@{/(lang=ru_RU)}" class="btn btn-danger" type="radio"
+               href="index.html">ru</a>
+        </div>
+
+        <div class="btn-toolbar" role="toolbar">
+            <a class="btn btn-info mr-3" href="/dicts/all"
+               th:text="#{title.dictionaries}"
+               th:if="${logInfo.hasRoleUser}">Dictionaries</a>
+            <a class="btn btn-info" href="/users/all"
+               th:text="#{title.users}"
+               th:if="${logInfo.hasRoleAdmin}"
+            >Users</a>
+        </div>
+
+        <div class="btn-toolbar" role="toolbar">
+            <a class="btn btn-info mr-3" href="/login"
+               th:text="#{button.login}"
+               th:if="${!logInfo.isAuthenticated()}">login</a>
+            <a class="btn btn-danger" href="/logout"
+               th:text="#{button.logout}"
+               th:if="${logInfo.isAuthenticated()}"
+            >logout</a>
+        </div>
+    </nav>
+    <br>
+    <h1 th:text="${#strings.isEmpty(user)} ? #{title.welcome.default} : #{title.welcome(${user.username})}">Welcome</h1>
+    <br>
+
+    </form>
+</div>
+</body>
+</html>

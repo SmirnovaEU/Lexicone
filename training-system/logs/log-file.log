@@ -1,0 +1,120 @@
+2025-05-16T21:03:26.486+03:00  INFO 15489 --- [training-system] [main] c.e.t.TrainingSystemApplicationTests     : Starting TrainingSystemApplicationTests using Java 21.0.1 with PID 15489 (started by elena in /Users/elena/Programmes/JAVA_Projects/Lexicone/training-system)
+2025-05-16T21:03:26.487+03:00  INFO 15489 --- [training-system] [main] c.e.t.TrainingSystemApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T21:03:26.946+03:00  INFO 15489 --- [training-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T21:03:26.976+03:00  INFO 15489 --- [training-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 7 JPA repository interfaces.
+2025-05-16T21:03:27.297+03:00  INFO 15489 --- [training-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-16T21:03:27.403+03:00  INFO 15489 --- [training-system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3dfe59d7
+2025-05-16T21:03:27.403+03:00  INFO 15489 --- [training-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-16T21:03:27.458+03:00  INFO 15489 --- [training-system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T21:03:27.482+03:00  INFO 15489 --- [training-system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-16T21:03:27.495+03:00  INFO 15489 --- [training-system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T21:03:27.618+03:00  INFO 15489 --- [training-system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T21:03:27.671+03:00  INFO 15489 --- [training-system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T21:03:28.140+03:00  INFO 15489 --- [training-system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T21:03:28.141+03:00  INFO 15489 --- [training-system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T21:03:28.393+03:00  INFO 15489 --- [training-system] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-16T21:03:29.065+03:00  WARN 15489 --- [training-system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T21:03:29.084+03:00  INFO 15489 --- [training-system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailSecurityService
+2025-05-16T21:03:29.127+03:00  INFO 15489 --- [training-system] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-16T21:03:29.279+03:00  INFO 15489 --- [training-system] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-05-16T21:03:29.663+03:00  INFO 15489 --- [training-system] [main] c.e.t.TrainingSystemApplicationTests     : Started TrainingSystemApplicationTests in 3.344 seconds (process running for 3.821)
+2025-05-16T21:03:30.013+03:00  INFO 15489 --- [training-system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T21:03:30.015+03:00  INFO 15489 --- [training-system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-16T21:03:30.016+03:00  INFO 15489 --- [training-system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-16T21:21:33.398+03:00  INFO 15976 --- [training-system] [main] c.e.t.TrainingSystemApplicationTests     : Starting TrainingSystemApplicationTests using Java 21.0.1 with PID 15976 (started by elena in /Users/elena/Programmes/JAVA_Projects/Lexicone/training-system)
+2025-05-16T21:21:33.399+03:00  INFO 15976 --- [training-system] [main] c.e.t.TrainingSystemApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T21:21:33.893+03:00  INFO 15976 --- [training-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T21:21:33.924+03:00  INFO 15976 --- [training-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 7 JPA repository interfaces.
+2025-05-16T21:21:34.273+03:00  INFO 15976 --- [training-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-16T21:21:34.392+03:00  INFO 15976 --- [training-system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e28dc96
+2025-05-16T21:21:34.393+03:00  INFO 15976 --- [training-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-16T21:21:34.449+03:00  INFO 15976 --- [training-system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T21:21:34.469+03:00  INFO 15976 --- [training-system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-16T21:21:34.483+03:00  INFO 15976 --- [training-system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T21:21:34.600+03:00  INFO 15976 --- [training-system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T21:21:34.659+03:00  INFO 15976 --- [training-system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T21:21:35.141+03:00  INFO 15976 --- [training-system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T21:21:35.142+03:00  INFO 15976 --- [training-system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T21:21:35.421+03:00  INFO 15976 --- [training-system] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-16T21:21:36.112+03:00  WARN 15976 --- [training-system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T21:21:36.131+03:00  INFO 15976 --- [training-system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailSecurityService
+2025-05-16T21:21:36.171+03:00  INFO 15976 --- [training-system] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-16T21:21:36.333+03:00  INFO 15976 --- [training-system] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-05-16T21:21:36.735+03:00  INFO 15976 --- [training-system] [main] c.e.t.TrainingSystemApplicationTests     : Started TrainingSystemApplicationTests in 3.509 seconds (process running for 3.967)
+2025-05-16T21:21:37.106+03:00  INFO 15976 --- [training-system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T21:21:37.108+03:00  INFO 15976 --- [training-system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-16T21:21:37.109+03:00  INFO 15976 --- [training-system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-16T23:22:54.990+03:00  INFO 18809 --- [training-system] [main] c.e.t.TrainingSystemApplicationTests     : Starting TrainingSystemApplicationTests using Java 21.0.1 with PID 18809 (started by elena in /Users/elena/Programmes/JAVA_Projects/Lexicone/training-system)
+2025-05-16T23:22:54.991+03:00  INFO 18809 --- [training-system] [main] c.e.t.TrainingSystemApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T23:22:55.572+03:00  INFO 18809 --- [training-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T23:22:55.613+03:00  INFO 18809 --- [training-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 7 JPA repository interfaces.
+2025-05-16T23:22:55.981+03:00  INFO 18809 --- [training-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-16T23:22:56.099+03:00  INFO 18809 --- [training-system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49c83262
+2025-05-16T23:22:56.100+03:00  INFO 18809 --- [training-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-16T23:22:56.168+03:00  INFO 18809 --- [training-system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T23:22:56.201+03:00  INFO 18809 --- [training-system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-16T23:22:56.218+03:00  INFO 18809 --- [training-system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T23:22:56.362+03:00  INFO 18809 --- [training-system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T23:22:56.435+03:00  INFO 18809 --- [training-system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T23:22:56.972+03:00  INFO 18809 --- [training-system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T23:22:56.974+03:00  INFO 18809 --- [training-system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T23:22:57.288+03:00  INFO 18809 --- [training-system] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-16T23:22:58.016+03:00  WARN 18809 --- [training-system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T23:22:58.043+03:00  INFO 18809 --- [training-system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailSecurityService
+2025-05-16T23:22:58.092+03:00  INFO 18809 --- [training-system] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-16T23:22:58.281+03:00  INFO 18809 --- [training-system] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-05-16T23:22:58.670+03:00  INFO 18809 --- [training-system] [main] c.e.t.TrainingSystemApplicationTests     : Started TrainingSystemApplicationTests in 3.856 seconds (process running for 4.398)
+2025-05-16T23:22:59.055+03:00  INFO 18809 --- [training-system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T23:22:59.057+03:00  INFO 18809 --- [training-system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-16T23:22:59.058+03:00  INFO 18809 --- [training-system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-16T23:46:29.326+03:00  INFO 19456 --- [training-system] [main] c.e.t.TrainingSystemApplicationTests     : Starting TrainingSystemApplicationTests using Java 21.0.1 with PID 19456 (started by elena in /Users/elena/Programmes/JAVA_Projects/Lexicone/training-system)
+2025-05-16T23:46:29.327+03:00  INFO 19456 --- [training-system] [main] c.e.t.TrainingSystemApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T23:46:29.851+03:00  INFO 19456 --- [training-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T23:46:29.885+03:00  INFO 19456 --- [training-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 7 JPA repository interfaces.
+2025-05-16T23:46:30.249+03:00  INFO 19456 --- [training-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-16T23:46:30.381+03:00  INFO 19456 --- [training-system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@31940704
+2025-05-16T23:46:30.382+03:00  INFO 19456 --- [training-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-16T23:46:30.443+03:00  INFO 19456 --- [training-system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T23:46:30.470+03:00  INFO 19456 --- [training-system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-16T23:46:30.484+03:00  INFO 19456 --- [training-system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T23:46:30.616+03:00  INFO 19456 --- [training-system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T23:46:30.665+03:00  INFO 19456 --- [training-system] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T23:46:31.188+03:00  INFO 19456 --- [training-system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T23:46:31.190+03:00  INFO 19456 --- [training-system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T23:46:31.485+03:00  INFO 19456 --- [training-system] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-16T23:46:32.273+03:00  WARN 19456 --- [training-system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T23:46:32.300+03:00  INFO 19456 --- [training-system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailSecurityService
+2025-05-16T23:46:32.346+03:00  INFO 19456 --- [training-system] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-16T23:46:32.519+03:00  INFO 19456 --- [training-system] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-05-16T23:46:32.938+03:00  INFO 19456 --- [training-system] [main] c.e.t.TrainingSystemApplicationTests     : Started TrainingSystemApplicationTests in 3.784 seconds (process running for 4.262)
+2025-05-16T23:46:33.313+03:00  INFO 19456 --- [training-system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T23:46:33.314+03:00  INFO 19456 --- [training-system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-16T23:46:33.316+03:00  INFO 19456 --- [training-system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

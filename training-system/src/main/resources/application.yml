@@ -1,0 +1,60 @@
+server:
+  port: 8080
+
+spring:
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+  messages:
+    encoding: UTF-8
+    basename: messages
+    use-code-as-default-message: true
+
+  application:
+    name: training-system
+  datasource:
+    url: jdbc:postgresql://localhost:5432/word_train
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: user
+    password: password
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+      id:
+        new_generator_mappings: false
+    show-sql: true
+security:
+  remember-me-key: "security_key"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,logfile
+  endpoint:
+    health:
+      show-details: always
+  info:
+    # Включает информацию о приложении из application.yml
+    env:
+      enabled: true
+    # Включает информацию о git, собранную плагином
+    git:
+      mode: "full"
+logging:
+  file:
+    name: "./logs/log-file.log"
+
+info:
+  app:
+    version: @project.version@
+    author: fedot
+    description: This is a multiuser anki training system
+
